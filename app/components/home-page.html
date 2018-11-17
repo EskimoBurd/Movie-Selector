@@ -1,0 +1,18 @@
+<header>
+    <p id="site-title">Film Finder</p>
+    <button ng-click="$ctrl.displayList();" id="watch-btn"><i class="material-icons">movie  </i>  View Watchlist</button>
+</header>
+
+<section class="main-container">
+
+    <search-page 
+    search= "$ctrl.search(searchCriteria)"
+    ></search-page>
+
+    <results-list
+    movies = "$ctrl.movies"
+    is-on = "$ctrl.isOn"
+    search= "$ctrl.search(searchCriteria)"
+    ></results-list>
+
+</section>

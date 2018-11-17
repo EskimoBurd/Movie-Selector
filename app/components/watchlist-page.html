@@ -1,0 +1,21 @@
+
+
+<section class="container-watchlist">
+    <p class="icon-x"><i ng-click= "$ctrl.displayHome();" class="material-icons">close</i></p>
+    <p class="wl-heading">Watchlist</p>
+    <section expand-on-focus class="wl-class-popup" ng-repeat="movie in $ctrl.wlArray">
+        <img class="wl-image" ng-src="https://image.tmdb.org/t/p/w92{{ movie.poster_path }}" >
+        <p class="wl-title">{{movie.title}}</p>
+        <p class="wl-genre">  
+                <ul>
+                    <li ng-repeat="genre in movie.genre_ids">{{ genre }}</li>
+                </ul>
+        </p>
+        <p class="wl-rating">{{ movie.vote_average}} out of 10</p>
+        <p class="wl-year">{{ movie.release_date | date: 'yyyy'}}</p>
+        <button class="remove-btn" ng-click="$ctrl.removeItem($index)"><i class="material-icons">delete</i>
+        </button>
+    </section>
+</section>
+
+

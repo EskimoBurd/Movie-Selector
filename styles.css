@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Limelight';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Limelight'), url(https://fonts.gstatic.com/s/limelight/v8/XLYkIZL7aopJVbZJHDuoOulHjHUmTQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-image: url("theater.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: silver;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#site-title {
+   font-family: "Limelight";
+   font-size: 50px;
+   color:maroon;
+   text-shadow: 1px 1px silver;
+}
+
+#watch-btn {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 240px;
+    border-radius: 5px;
+    background-color: maroon;
+    border: 1px solid silver;
+    color: silver;
+    font-size: 20px;
+}
+
+#watch-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#search-input {
+    padding: 20px;
+    margin: 10px;
+    width: 700px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: silver;
+    font-size: 20px;
+}
+
+#search-input::placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+.dropdown {
+    height: 30px;
+    margin-right: 10px;
+    background-color: silver;
+    font-size: 14px;
+}
+
+#search-btn {
+    width: 130px;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: maroon;
+    color: silver;
+    font-size: 13px;
+}
+
+#search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#results-title{
+    font-family: 'Limelight';
+    font-size: 40px;
+    color: black;
+    margin: 10px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.hidden-element {
+    display: none;
+}
+
+.results-container {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    width: 1200px;
+    background-color: silver;
+    height: 330px;
+    overflow: scroll;
+}
+
+ul {
+    color: black;
+}
+
+
+i {
+    margin-right: 5px;
+}
+/*------------------------------*/
+
+
+
+.wl-title {
+    font-family: "Kanit";
+    font-size: 2em;
+    height: 100px;
+    align-items: center;
+    
+}
+
+.remove-btn {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  
+}
+
+
+
+.single-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    height: 150px;
+    align-items: center;
+    font-family: "Space Mono";
+    border-bottom: 1px dotted black;
+    padding-bottom: 15px;
+    margin-top: 24px;
+    z-index: -1;
+    
+}
+
+.result-img {
+    border-radius: 5px;
+    height: 148px;
+    width: 148px;
+}
+
+#star {
+    font-size: 70px;
+}
+
+
+#star:hover {
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result-title {
+    font-family: "Kanit";
+    font-size: 2em;
+    height: 100px;
+    width: 350px;
+    align-items: center;
+}
+
+.wl-heading {
+    font-family: 'Limelight';
+    font-size: 40px;
+    color: black;
+    margin: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+}
+
+.wl-img {
+    border-radius: 5px;
+    height: 140px;
+    width: 140px;
+}
+
+.wl-class-popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    height: 150px;
+    align-items: center;
+    font-family: "Space Mono";
+    border-bottom: 1px dotted black;
+    padding-bottom: 15px;
+    margin-top: 24px;
+}
+
+.container-watchlist {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    background-color: silver;
+    height: 530px;
+    overflow: scroll;
+    margin-top: 27px;
+}
+
+.icon-x {
+    color: white;
+    text-shadow: 2px 2px black;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2em;
+}
+
+.icon-x:hover {
+    cursor: pointer
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.yellow-back {
+    color: yellow;
+}
+
+
+
+
+
